@@ -187,19 +187,31 @@ var config = [
     "./cloud9.run.shell",
     {
         packagePath: "./cloud9.run.node",
+        nodeVersions: {
+            "0.8" : "./node/node0.8",
+            "0.10": "./node/node0.10",
+            "0.11": "./node/node0.11"
+            // and so on...
+        },
         listenHint: "Important: in your scripts, use 'process.env.PORT' as port and '0.0.0.0' as host."
     },
     {
         packagePath: "./cloud9.run.node-debug",
+        nodeVersions: {
+            "0.8" : "./node/node0.8",
+            "0.10": "./node/node0.10",
+            "0.11": "./node/node0.11"
+            // and so on...
+        },
         listenHint: "Important: in your scripts, use 'process.env.PORT' as port and '0.0.0.0' as host.",
         debugPort: debugPort
     },
     "./cloud9.run.npm",
     "./cloud9.run.npmnode",
-    "./cloud9.run.ruby",
-    "./cloud9.run.python",
-    "./cloud9.run.apache",
-    "./cloud9.run.php",
+//    "./cloud9.run.ruby",
+//    "./cloud9.run.python",
+//    "./cloud9.run.apache",
+//    "./cloud9.run.php",
     "architect/plugins/architect.log",
     "./cloud9.ide.auth",
     "./cloud9.ide.git",
@@ -213,11 +225,11 @@ var config = [
         packagePath: "./cloud9.ide.run-npm-module",
         allowShell: true
     },
-    "./cloud9.ide.run-python",
-    "./cloud9.ide.run-apache",
-    "./cloud9.ide.run-ruby",
-    "./cloud9.ide.run-php",
-    "./cloud9.run.python",
+//    "./cloud9.ide.run-python",
+//    "./cloud9.ide.run-apache",
+//    "./cloud9.ide.run-ruby",
+//    "./cloud9.ide.run-php",
+//    "./cloud9.run.python",
     "./cloud9.ide.revisions",
     {
         packagePath: "./cloud9.ide.settings",

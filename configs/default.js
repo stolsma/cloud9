@@ -188,11 +188,11 @@ var config = [
     {
         packagePath: "./cloud9.run.node",
         nodeVersions: {
-            "auto" : "./node/nodeAuto",
-            "0.8"  : "./node/node0.8",
-            "0.10" : "./node/node0.10",
-            "0.11" : "./node/node0.11",
-            "0.12" : "./node/node0.12"
+            "auto" : path.resolve("../nodeVersions/nodeAuto"),
+            "0.8"  : path.resolve("../nodeVersions/node0.8"),
+            "0.10" : path.resolve("../nodeVersions/node0.10"),
+            "0.11" : path.resolve("../nodeVersions/node0.11"),
+            "0.12" : path.resolve("../nodeVersions/node0.12")
             // and so on...
         },
         listenHint: "Important: in your scripts, use 'process.env.PORT' as port and '0.0.0.0' as host."
@@ -200,11 +200,11 @@ var config = [
     {
         packagePath: "./cloud9.run.node-debug",
         nodeVersions: {
-            "auto" : "./node/nodeAuto",
-            "0.8"  : "./node/node0.8",
-            "0.10" : "./node/node0.10",
-            "0.11" : "./node/node0.11",
-            "0.12" : "./node/node0.12"
+            "auto" : path.resolve("../nodeVersions/nodeAuto"),
+            "0.8"  : path.resolve("../nodeVersions/node0.8"),
+            "0.10" : path.resolve("../nodeVersions/node0.10"),
+            "0.11" : path.resolve("../nodeVersions/node0.11"),
+            "0.12" : path.resolve("../nodeVersions/node0.12")
             // and so on...
         },
         listenHint: "Important: in your scripts, use 'process.env.PORT' as port and '0.0.0.0' as host.",
